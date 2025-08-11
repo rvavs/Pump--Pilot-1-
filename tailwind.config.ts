@@ -1,13 +1,14 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
+
 const config: Config = {
-  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}"
+  ],
   theme: {
-    extend: {
-      colors: {
-        emerald: { 500: "#10b981" }
-      }
-    }
+    extend: {}
   },
-  plugins: [],
-};
-export default config;
+  plugins: []
+}
+
+export default config
